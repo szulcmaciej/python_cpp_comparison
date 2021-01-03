@@ -1,19 +1,12 @@
 #! /bin/bash
 
 
-TASK_NAME=assign
-TASK_SIZE=1000000
-#TASK_SIZE=10000000
-
+TASK_NAME=numpy_test
+TASK_SIZE=64
 
 BASE_PATH=tasks
 
 g++ ${BASE_PATH}/${TASK_NAME}.cpp -o ${BASE_PATH}/${TASK_NAME}
-
-# for i in {1..5}
-# do
-#    echo "Welcome $i times"
-# done
 
 # touch results.txt
 echo Task name: $TASK_NAME > results.txt
