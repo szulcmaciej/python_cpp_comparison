@@ -2,7 +2,8 @@
 
 
 TASK_NAME=assign
-TASK_SIZE=10000000
+TASK_SIZE=1000000
+#TASK_SIZE=10000000
 
 
 BASE_PATH=tasks
@@ -22,8 +23,16 @@ echo Task size: $TASK_SIZE >> results.txt
 echo 'C++ timing'
 /usr/bin/time -f %E -o results.txt --append ${BASE_PATH}/${TASK_NAME} ${TASK_SIZE}
 echo 'done'
+tail -n 1 results.txt
 
 #PYTHON
 echo 'Python timing'
 /usr/bin/time -f %E -o results.txt --append python3.7 ${BASE_PATH}/${TASK_NAME}.py ${TASK_SIZE}
 echo 'done'
+tail -n 1 results.txt
+
+#PYPY
+echo 'PyPy timing'
+/usr/bin/time -f %E -o results.txt --append pypy ${BASE_PATH}/${TASK_NAME}.py ${TASK_SIZE}
+echo 'done'
+tail -n 1 results.txt
