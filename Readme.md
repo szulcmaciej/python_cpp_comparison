@@ -11,6 +11,6 @@ Install docker and dependencies:
 
 ## Usage
 
-* Clone this repo `git clone https://github.com/szulcmaciej/python_cpp_comparison.git`
+* Clone this repo `git clone https://github.com/szulcmaciej/python_cpp_comparison.git && cd python_cpp_comparison`
 * Pull & run the container `make run`
 * Run compare.sh `./compare.sh`
