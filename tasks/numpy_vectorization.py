@@ -16,17 +16,17 @@ tic = time.time()
 z = 0
 for i in range(len(a)):
     z += a[i] * b[i]
-print(z)
 toc = time.time()
-
 elapsed = toc - tic
+
+print(z)
 print(f'for-loop: {elapsed / 1000} ms')
 
 # vectorized
 tic = time.time()
 c = np.dot(a, b)
-print(c)
 toc = time.time()
-
 elapsed = toc - tic
+
+print(c)
 print(f'np.dot: {elapsed / 1000} ms')
