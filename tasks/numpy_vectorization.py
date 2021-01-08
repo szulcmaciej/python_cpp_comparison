@@ -20,6 +20,7 @@ print(z)
 toc = time.time()
 
 elapsed = toc - tic
+print(f'for-loop: {elapsed / 1000} ms')
 
 # vectorized
 tic = time.time()
@@ -28,3 +29,4 @@ print(c)
 toc = time.time()
 
 elapsed = toc - tic
+print(f'np.dot: {elapsed / 1000} ms')
