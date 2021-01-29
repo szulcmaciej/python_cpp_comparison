@@ -1,6 +1,6 @@
 Compare execution speeds between C++, CPython and pypy.
 
-The aim of this project is to allow quick dockerized comparisons.
+The aim of this project is to learn Docker and allow quick dockerized comparisons of Cpython, pypy and C++.
 
 ## Requirements
 
@@ -13,4 +13,5 @@ Install docker and dependencies:
 
 * Clone this repo `git clone https://github.com/szulcmaciej/python_cpp_comparison.git && cd python_cpp_comparison`
 * Pull & run the container `make run`
+* Configure comparison in `./compare.sh`
 * Run compare.sh `./compare.sh`
